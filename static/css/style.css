@@ -1,0 +1,403 @@
+@font-face {
+  font-family: futuraPTMedium;
+  src: url(../font/FuturaPTMedium.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: futuraPTMedium;
+  margin: 0 3vw;
+  color: white;
+  background: rgb(30, 30, 30);
+  font-size: 1.2vw;
+  background-image: url(../media/bg2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+body p {
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+body .navbarBlock {
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+body .navbarBlock .box .btnoffcan {
+  background: #de0062;
+  color: white;
+  border: 0;
+  font-size: 2.5vw;
+  padding: 0.1vw 0.4vw;
+}
+body .navbarBlock .box .offcanvas {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .navbarBlock .box .offcanvas .offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body .navbarBlock .box .offcanvas .offcanvas-body a {
+  font-size: 1.6vw;
+  background-color: #de0062;
+  color: white;
+  margin-bottom: 1vw;
+  font-weight: bold;
+  width: 100%;
+  text-align: end;
+  padding: 0.5vw;
+}
+body .navbarBlock .box:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+body .navbarBlock .box:nth-child(2) a {
+  display: flex;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+body .navbarBlock .box:nth-child(2) a .right {
+  color: #de0062;
+}
+body .navbarBlock .box:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  margin: 2vw 0;
+}
+body header .float1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 2vw;
+}
+body header .float1 p:last-child {
+  font-size: 1.4vw;
+  color: rgba(255, 255, 255, 0.8);
+}
+body header .float2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  row-gap: 2vw;
+  justify-content: space-between;
+  margin: 1vw 0;
+}
+body header .float2 a {
+  text-align: center;
+  background-color: #de0062;
+  padding: 0.5vw;
+  font-size: 2vw;
+}
+body header .float3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 2vw;
+}
+body header .float3 a {
+  font-size: 2vw;
+  color: #de0062;
+}
+body main {
+  min-height: 100vh;
+}
+body main .navigationBar nav {
+  margin: 2vw 0;
+  display: flex;
+  justify-content: flex-end;
+}
+body main .navigationBar nav .breadcrumb .active {
+  color: white !important;
+}
+body main .navigationBar nav a {
+  color: #de0062;
+}
+body main .postBlock {
+  display: flex;
+}
+body main .postBlock .img {
+  margin: 0 2vw 0 0;
+  width: 45vw;
+}
+body main .postBlock .img .mainImg {
+  margin: 0 0 1vw 0;
+}
+body main .postBlock .img .mainImg div img {
+  width: 45vw;
+  height: 45vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border: 0.1vw solid rgba(255, 255, 255, 0.3);
+}
+body main .postBlock .img .imgList div img {
+  width: 10vw;
+  height: 10vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border: 0.1vw solid rgba(255, 255, 255, 0.3);
+}
+body main .postBlock .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 2vw;
+}
+body main .postBlock .info .phone {
+  background-color: #de0062;
+  padding: 0.5vw 0.5vw 0.5vw 1.5vw;
+}
+body main .cardsBlock {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  row-gap: 2vw;
+}
+body main .cardsBlock .cardbox {
+  width: 22vw;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 0.1vw solid rgba(255, 255, 255, 0.3);
+  padding: 0.5vw;
+}
+body main .cardsBlock .cardbox .location {
+  text-align: end;
+}
+body main .cardsBlock .cardbox .img .btnimg {
+  border: 0;
+  background: none;
+}
+body main .cardsBlock .cardbox .img .btnimg img {
+  margin: 0.5vw 0;
+  width: 21vw;
+  height: 22vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5vw;
+}
+body main .cardsBlock .cardbox .img .modal .modal-dialog .modal-content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 45vw;
+}
+body main .cardsBlock .cardbox .img .modal .modal-dialog .modal-content .modal-body {
+  display: flex;
+  justify-content: center;
+}
+body main .cardsBlock .cardbox .img .modal .modal-dialog .modal-content .modal-body img {
+  width: 40vw;
+  height: 40vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1vw;
+}
+body main .cardsBlock .cardbox .img .modal .modal-dialog .modal-content .modal-body .btnbox {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  bottom: 5vw;
+  justify-content: center;
+}
+body main .cardsBlock .cardbox .img .modal .modal-dialog .modal-content .modal-body .btnbox .btn {
+  font-size: 2vw;
+  background-color: #de0062;
+  color: white;
+  font-weight: bold;
+}
+body main .cardsBlock .cardbox .info .top {
+  text-align: end;
+  margin: 0.5vw 0;
+  font-size: 2vw;
+}
+body main .cardsBlock .cardbox .info .bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+body main .cardsBlock .cardbox .info .bottom div {
+  position: absolute;
+  top: 0;
+  width: 15vw;
+  height: 4.5vw;
+}
+body main .cardsBlock .cardbox .info .bottom .left {
+  background-color: green;
+  -webkit-clip-path: polygon(0 0, 100% 0, 52% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 52% 100%, 0% 100%);
+  padding: 0.5vw 3vw 0.5vw 0.5vw;
+  left: 0;
+}
+body main .cardsBlock .cardbox .info .bottom .right {
+  background-color: #de0062;
+  -webkit-clip-path: polygon(53% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(53% 0, 100% 0, 100% 100%, 0% 100%);
+  padding: 0.5vw 0 0.5vw 8vw;
+  right: 0;
+}
+body main .endblock {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2vw 0;
+}
+body main .endblock .btn {
+  background-color: #de0062;
+  color: white;
+  font-size: 2vw;
+}
+body footer {
+  background-color: rgb(50, 50, 50);
+  padding: 0.5vw;
+  margin-top: 2vw;
+}
+body footer .float1 a {
+  margin: 0 0.5vw;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body footer .float2 {
+  font-size: 1.6vw;
+  text-align: end;
+}
+
+@media only screen and (max-width: 1000px) {
+  body .navbarBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .navbarBlock .box a p {
+    font-size: 5vw;
+  }
+  body .navbarBlock .box .offcanvas .offcanvas-body a {
+    font-size: 3vw;
+  }
+  body .navbarBlock .box:first-child {
+    display: none;
+  }
+  body .navbarBlock .box:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .navbarBlock .box:last-child .btnoffcan {
+    font-size: 5vw;
+  }
+  body main .navigationBar {
+    font-size: 5vw;
+  }
+  body main .postBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .postBlock .img {
+    width: 94vw;
+    margin: 0;
+    margin-bottom: 5vw;
+  }
+  body main .postBlock .img .mainImg {
+    margin-bottom: 5vw;
+  }
+  body main .postBlock .img .mainImg div img {
+    width: 94vw;
+    height: 94vw;
+  }
+  body main .postBlock .img .imgList div img {
+    width: 20vw;
+    height: 20vw;
+  }
+  body main .postBlock .info {
+    font-size: 5vw;
+  }
+  body main .cardsBlock {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+  body main .cardsBlock .cardbox {
+    width: 90vw;
+    height: 120vw;
+  }
+  body main .cardsBlock .cardbox .location a {
+    font-size: 5vw;
+  }
+  body main .cardsBlock .cardbox .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .cardsBlock .cardbox .img .btnimg img {
+    width: 80vw;
+    height: 80vw;
+  }
+  body main .cardsBlock .cardbox .img .modal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+  }
+  body main .cardsBlock .cardbox .img .modal .modal-dialog .modal-content {
+    width: 90vw;
+    height: 90vw;
+  }
+  body main .cardsBlock .cardbox .img .modal .modal-dialog .modal-content .modal-body img {
+    width: 100%;
+    height: 100%;
+  }
+  body main .cardsBlock .cardbox .img .modal .modal-dialog .modal-content .modal-body .btnbox .btn {
+    font-size: 5vw;
+  }
+  body main .cardsBlock .cardbox .info .top a {
+    font-size: 5vw;
+  }
+  body main .cardsBlock .cardbox .info .bottom {
+    font-size: 5vw;
+  }
+  body main .cardsBlock .cardbox .info .bottom div {
+    height: 18vw;
+  }
+  body main .cardsBlock .cardbox .info .bottom .left {
+    width: 80vw;
+    padding: 1.5vw;
+  }
+  body main .cardsBlock .cardbox .info .bottom .right {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vw;
+    align-items: flex-end;
+  }
+}/*# sourceMappingURL=style.css.map */

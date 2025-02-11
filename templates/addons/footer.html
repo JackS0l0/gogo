@@ -1,0 +1,14 @@
+{% load static %}
+{% load i18n %}
+<footer>
+    <div class="float1">
+        {% for loc in locations %}
+            <a href="#">{{loc.name}}</a>
+        {% endfor %}
+    </div>
+    <div class="float2">
+        {% for msp in ms %}
+            <p>{{msp.footer}}</p>
+        {% endfor %}
+    </div>
+</footer>

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block main %}
+    {% for msp in ms %}
+        {% include 'addons/header.html' %}
+        <main>
+            <div class="cardsBlock">
+                {% for girl in girls %}
+                    <div class="cardbox">
+                        <div class="location">
+                            <a href="#">{{girl.loc}} <i class="bi bi-geo-alt"></i></a>
+                        </div>
+                        <div class="img">
+                            <button type="button" class="btnimg" data-bs-toggle="modal" data-bs-target="#exampleModal{{girl.id}}">
+                                <img src="{{girl.img}}" alt="{{girl.name}}">
+                            </button>
+                            <div class="modal fade" id="exampleModal{{girl.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img src="{{girl.img}}" alt="{{girl.name}}">
+                                            <div class="btnbox">
+                                                <a href="{% url 'post' girl.slug %}" class="btn">ראה עוד</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="top">
+                                <a href="{% url 'post' girl.slug %}">{{girl.name}}</a>
+                            </div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <a href="#">Whatsapp</a>
+                                </div>
+                                <div class="right">
+                                    <a href="tel:+{{girl.numlink}}" target="_blank" type="">
+                                        <p>חייג עכשיו</p>
+                                        <p>{{girl.num}}</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="endblock">
+                <a href="#" class="btn">לראות הכל</a>
+            </div>
+            <div class="mainInfo">
+                {{msp.mainText2 | safe}}
+            </div>
+        </main>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% load static %}
+{% load i18n %}
+<header>
+    <div class="float1">
+        <p>{{msp.mainText1 | safe}}</p>
+    </div>
+    <div class="float2">
+        {%  for loc in locations %}
+            <a href="#">{{loc.name}}</a>
+        {% endfor %}
+    </div>
+    <div class="float3">
+        <p>דרושות חשפניות לעבודה בשכר הגבוה בישראל !</p>
+        <a href="#">לפרטים נוספים לחצו כאן</a>
+    </div>
+</header>

@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block main %}
+    <main>
+        <div class="navigationBar">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">{{object.name}}</li>
+                    <li class="breadcrumb-item"><a href="#">{{object.loc}}</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">דף הבית</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="postBlock">
+            <div class="img">
+                <div class="mainImg">
+                    {% if object.img %}
+                        <div>
+                            <img src="{{object.img}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img2 %}
+                        <div>
+                            <img src="{{object.img2}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img3 %}
+                        <div>
+                            <img src="{{object.img3}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img4 %}
+                        <div>
+                            <img src="{{object.img4}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img5 %}
+                        <div>
+                            <img src="{{object.img5}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img6 %}
+                        <div>
+                            <img src="{{object.img6}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img7 %}
+                        <div>
+                            <img src="{{object.img7}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img8 %}
+                        <div>
+                            <img src="{{object.img8}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img9 %}
+                        <div>
+                            <img src="{{object.img9}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img10 %}
+                        <div>
+                            <img src="{{object.img10}}" alt="">
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="imgList">
+                    {% if object.img %}
+                        <div>
+                            <img src="{{object.img}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img2 %}
+                        <div>
+                            <img src="{{object.img2}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img3 %}
+                        <div>
+                            <img src="{{object.img3}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img4 %}
+                        <div>
+                            <img src="{{object.img4}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img5 %}
+                        <div>
+                            <img src="{{object.img5}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img6 %}
+                        <div>
+                            <img src="{{object.img6}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img7 %}
+                        <div>
+                            <img src="{{object.img7}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img8 %}
+                        <div>
+                            <img src="{{object.img8}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img9 %}
+                        <div>
+                            <img src="{{object.img9}}" alt="">
+                        </div>
+                    {% endif %}
+                    {% if object.img10 %}
+                        <div>
+                            <img src="{{object.img10}}" alt="">
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="info">
+                <p class="name">שֵׁם: {{object.name}}</p>
+                <a href="#">מִקוּם: {{object.loc}}</a>
+                <p class="desc">{{object.desc | safe}}</p>
+                <a href="tel:{{object.numlink}}" target="_blank">Whatsapp</a>
+                <a href="tel:{{object.numlink}}" target="_blank" class="phone">{{object.num}}</a>
+            </div>
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% load static %}
+{% load i18n %}
+<div class="navbarBlock">
+    <div class="box"></div>
+    <div class="box">
+        <a href="{% url 'index' %}">
+            <p class="left">GOGO</p>
+            <p class="right">GIRLS</p>
+        </a>
+    </div>
+    <div class="box">
+        <button class="btnoffcan" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-text-right"></i></button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <a href="#">חשפניות</a>
+                <a href="#">חשפניות בתל אביב והמרכז</a>
+                <a href="#">חשפניות בצפון</a>
+                <a href="#">חשפניות באילת</a>
+                <a href="#">חשפניות בירושלים</a>
+                <a href="#">דרושות חשפניות</a>
+                <a href="#">לופטים</a>
+            </div>
+        </div>
+    </div>
+</div>

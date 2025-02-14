@@ -418,4 +418,10 @@ body footer .float2 {
     padding: 1.5vw;
     align-items: flex-end;
   }
+  body footer {
+    font-size: 5vw;
+  }
+  body footer P {
+    font-size: 5vw;
+  }
 }/*# sourceMappingURL=style.css.map */

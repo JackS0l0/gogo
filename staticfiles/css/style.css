@@ -304,7 +304,7 @@ body footer .float2 {
     font-size: 5vw;
   }
   body .navbarBlock .box .offcanvas .offcanvas-body a {
-    font-size: 3vw;
+    font-size: 6vw;
   }
   body .navbarBlock .box:first-child {
     display: none;
@@ -314,6 +314,24 @@ body footer .float2 {
     justify-content: flex-end;
   }
   body .navbarBlock .box:last-child .btnoffcan {
+    font-size: 5vw;
+  }
+  body header .float1 {
+    font-size: 4vw;
+  }
+  body header .float2 {
+    grid-template-columns: auto auto auto auto;
+  }
+  body header .float2 a {
+    font-size: 5vw;
+  }
+  body header .float3 {
+    font-size: 4vw;
+  }
+  body header .float3 a {
+    font-size: 4vw;
+  }
+  body main .mainInfo {
     font-size: 5vw;
   }
   body main .navigationBar {

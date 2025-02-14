@@ -323,7 +323,7 @@ body{
                 .offcanvas{
                     .offcanvas-body{
                         a{
-                            font-size: 3vw;
+                            font-size: 6vw;
                         }
                     }
                 }
@@ -339,7 +339,27 @@ body{
                 }
             }
         }
+        header{
+            .float1{
+                font-size: 4vw;
+            }
+            .float2{
+                grid-template-columns: auto auto auto auto;
+                a{
+                    font-size: 5vw;
+                }
+            }
+            .float3{
+                font-size: 4vw;
+                a{
+                    font-size: 4vw;
+                }
+            }
+        }
         main{
+            .mainInfo{
+                font-size: 5vw;
+            }
             .navigationBar{
                 font-size: 5vw;
             }
